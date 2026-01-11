@@ -16,7 +16,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const login = useCallback((username: string, password: string) => {
     // Default admin credentials
-    if (username === 'admin' && password === 'admin') {
+    if (username === 'Admin' && password === 'Admin') {
       setAuthState({
         isLoggedIn: true,
         user: {

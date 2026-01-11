@@ -12,7 +12,7 @@ interface ButtonProps {
   onPress: () => void;
   style?: ViewStyle;
   textStyle?: TextStyle;
-  variant?: 'primary' | 'secondary' | 'danger';
+  variant?: 'primary' | 'secondary' | 'danger' | 'success';
   disabled?: boolean;
 }
 
@@ -48,13 +48,16 @@ const styles = StyleSheet.create({
     marginVertical: 8,
   },
   primary: {
-    backgroundColor: '#0066CC',
+    backgroundColor: '#FF8C00',
   },
   secondary: {
-    backgroundColor: '#E8E8E8',
+    backgroundColor: '#E5E7EB',
   },
   danger: {
-    backgroundColor: '#FF3B30',
+    backgroundColor: '#DC2626',
+  },
+  success: {
+    backgroundColor: '#10B981',
   },
   disabled: {
     opacity: 0.5,
@@ -70,6 +73,9 @@ const styles = StyleSheet.create({
     color: '#000000',
   },
   dangerText: {
+    color: '#FFFFFF',
+  },
+  successText: {
     color: '#FFFFFF',
   },
 });

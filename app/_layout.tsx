@@ -18,11 +18,16 @@ function RootLayoutNav() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack screenOptions={{ headerShown: false }}>
-        {authState.isLoggedIn ? (
-          <Stack.Screen name="(main)" options={{ headerShown: false }} />
-        ) : (
-          <Stack.Screen name="(auth)" options={{ headerShown: false }} />
-        )}
+        <Stack.Screen 
+          name="(auth)" 
+          options={{ headerShown: false }}
+          redirect={authState.isLoggedIn}
+        />
+        <Stack.Screen 
+          name="(main)" 
+          options={{ headerShown: false }}
+          redirect={!authState.isLoggedIn}
+        />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

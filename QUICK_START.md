@@ -24,8 +24,8 @@ npm start
 ### Login
 1. Launch the app
 2. Enter credentials:
-   - **Username**: `admin`
-   - **Password**: `admin`
+   - **Username**: `Admin`
+   - **Password**: `Admin`
 3. Tap "Login"
 
 ### Production Entry Workflow

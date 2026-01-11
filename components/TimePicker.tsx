@@ -39,7 +39,7 @@ export function TimePicker({ value, onChange, label, style }: TimePickerProps) {
         style={styles.timeButton}
         onPress={() => setIsVisible(true)}
       >
-        <MaterialIcons name="schedule" size={20} color="#0066CC" />
+        <MaterialIcons name="schedule" size={20} color="#1E3A5F" />
         <Text style={styles.timeText}>
           {value || 'Select time'}
         </Text>
@@ -51,7 +51,7 @@ export function TimePicker({ value, onChange, label, style }: TimePickerProps) {
             <View style={styles.header}>
               <Text style={styles.headerText}>Select Time</Text>
               <TouchableOpacity onPress={() => setIsVisible(false)}>
-                <MaterialIcons name="close" size={24} color="#0066CC" />
+                <MaterialIcons name="close" size={24} color="#1E3A5F" />
               </TouchableOpacity>
             </View>
 
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: '#E8E8E8',
+    borderColor: '#E5E7EB',
     borderRadius: 8,
     paddingHorizontal: 12,
     paddingVertical: 10,
@@ -159,7 +159,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingBottom: 16,
     borderBottomWidth: 1,
-    borderBottomColor: '#E8E8E8',
+    borderBottomColor: '#E5E7EB',
   },
   headerText: {
     fontSize: 18,
@@ -181,16 +181,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   selectedOption: {
-    backgroundColor: '#E6F4FE',
+    backgroundColor: '#F3F4F6',
   },
   timeOptionText: {
     fontSize: 18,
-    color: '#CCCCCC',
+    color: '#D1D5DB',
   },
   selectedText: {
     fontSize: 20,
     fontWeight: '700',
-    color: '#0066CC',
+    color: '#FF8C00',
   },
   separator: {
     fontSize: 24,
@@ -199,7 +199,7 @@ const styles = StyleSheet.create({
     color: '#000000',
   },
   confirmButton: {
-    backgroundColor: '#0066CC',
+    backgroundColor: '#FF8C00',
     marginHorizontal: 16,
     marginBottom: 32,
     paddingVertical: 12,

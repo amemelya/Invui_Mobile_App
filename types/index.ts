@@ -25,6 +25,7 @@ export interface ProductionEntry {
   startTime: string;
   endTime: string;
   unitsProduced: number;
+  reasons?: string[];
   timestamp: string;
 }
 

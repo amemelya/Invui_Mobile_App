@@ -30,13 +30,13 @@ export function ListItem({
       activeOpacity={0.7}
     >
       {icon && (
-        <MaterialIcons name={icon as any} size={24} color="#0066CC" style={styles.icon} />
+        <MaterialIcons name={icon as any} size={24} color="#1E3A5F" style={styles.icon} />
       )}
       <View style={styles.content}>
         <Text style={styles.title}>{title}</Text>
         {description && <Text style={styles.description}>{description}</Text>}
       </View>
-      <MaterialIcons name="chevron-right" size={24} color="#CCCCCC" />
+      <MaterialIcons name="chevron-right" size={24} color="#D1D5DB" />
     </TouchableOpacity>
   );
 }
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     backgroundColor: '#FFFFFF',
     borderBottomWidth: 1,
-    borderBottomColor: '#E8E8E8',
+    borderBottomColor: '#E5E7EB',
   },
   icon: {
     marginRight: 16,
